@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
     autoprefixer: {
       single_file: {
-        src: 'stc/style.css',
+        src: 'src/style.css',
         dest: 'src/style.css'
       }
     },
