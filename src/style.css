@@ -1,60 +1,222 @@
 @font-face {
     font-family: 'iAWriterDuospace';
-    src: url('assets/iAWriterDuospace-Regular.otf') format('truetype');
+    src: url('assets/fonts/iAWriterDuospace-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'iAWriterDuospace';
-    src: url('assets/iAWriterDuospace-Italic.otf') format('truetype');
+    src: url('assets/fonts/iAWriterDuospace-Italic.otf') format('truetype');
     font-weight: normal;
     font-style: italic;
  }
 @font-face {
     font-family: 'iAWriterDuospace';
-    src: url('assets/iAWriterDuospace-Bold.otf') format('truetype');
+    src: url('assets/fonts/iAWriterDuospace-Bold.otf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'iAWriterDuospace';
-    src: url('assets/iAWriterDuospace-BoldItalic.otf') format('truetype');
+    src: url('assets/fonts/iAWriterDuospace-BoldItalic.otf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
-h1 {
-    font-family: "iAWriterDuospace";
+body {
+    font-family: 'iAWriterDuospace';
+    color: #222222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.padding-bottom-std {
+    padding-bottom: 3.5%;
+}
+
+.padding-bottom-half {
+    padding-bottom: 1.75%;
+}
+
+.main-container-section {
+    /* lost-align: left; */
+    height: 90%;
+    width: 80%;
+    padding: 5% 10% 5% 10%;
+}
+
+.main-container-section:before {
+    /* lost-align: left; */
+    content: '';
+    display: table;
+}
+
+.main-container-section:after {
+    /* lost-align: left; */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.page-teaser-image {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.half-col {
+    width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+}
+
+.half-col:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+
+.half-col:last-child {
+    margin-right: 0;
+}
+
+.half-col:nth-child(2n) {
+    margin-right: 0;
+    float: right;
+}
+
+.half-col:nth-child(2n + 1) {
+    clear: both;
+}
+
+.vgrid-item {
+    width: 100%;
+    height: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+    margin-bottom: 30px;
+}
+
+.vgrid-item:last-child {
+    margin-bottom: 0;
+}
+
+.page-headline {
     font-weight: bold;
-    color: 222222;
+    font-size: 2em;
 }
 
-p {
-    font-family: "iAWriterDuospace";
-    color: 222222;
+.page-subheadline {
+    color: #aaaaaa;
+    font-size: 0.75em;
 }
 
-div {
-  width: calc(99.9% * 1/3 - (60px - 60px * 1/3));
+.page-mission {
+    font-style: italic;
+    font-size: 1em;
 }
 
-div:nth-child(1n) {
-  float: left;
-  margin-right: 60px;
-  clear: none;
+.headline {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
-div:last-child {
-  margin-right: 0;
+.projects-section {
+    float: left;
 }
 
-div:nth-child(3n) {
-  margin-right: 0;
-  float: right;
+.project-tile {
+    width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+    max-width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+    height: calc(99.9% * 1/3 - (30px - 30px * 1/3));
 }
 
-div:nth-child(3n + 1) {
-  clear: both;
+.project-tile:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    clear: none;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLXByZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQ0FBZ0M7SUFDaEMsbUVBQW1FO0lBQ25FLG9CQUFvQjtJQUNwQixtQkFBbUI7Q0FDdEI7QUFDRDtJQUNJLGdDQUFnQztJQUNoQyxrRUFBa0U7SUFDbEUsb0JBQW9CO0lBQ3BCLG1CQUFtQjtFQUNyQjtBQUNGO0lBQ0ksZ0NBQWdDO0lBQ2hDLGdFQUFnRTtJQUNoRSxrQkFBa0I7SUFDbEIsbUJBQW1CO0NBQ3RCO0FBQ0Q7SUFDSSxnQ0FBZ0M7SUFDaEMsc0VBQXNFO0lBQ3RFLGtCQUFrQjtJQUNsQixtQkFBbUI7Q0FDdEI7O0FBSUQ7SUFDSSxnQ0FBZ0M7SUFDaEMsa0JBQWtCO0lBQ2xCLGNBQWM7Q0FDakI7O0FBRUQ7SUFDSSxnQ0FBZ0M7SUFDaEMsY0FBYztDQUNqQjs7QUFFRDtFQUNFLCtDQUFpQjtDQUNsQjs7QUFGRDtFQUNFLFlBQWlCO0VBQWpCLG1CQUFpQjtFQUFqQixZQUFpQjtDQUNsQjs7QUFGRDtFQUNFLGdCQUFpQjtDQUNsQjs7QUFGRDtFQUNFLGdCQUFpQjtFQUFqQixhQUFpQjtDQUNsQjs7QUFGRDtFQUNFLFlBQWlCO0NBQ2xCIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xuICAgIGZvbnQtZmFtaWx5OiAnaUFXcml0ZXJEdW9zcGFjZSc7XG4gICAgc3JjOiB1cmwoJ2Fzc2V0cy9pQVdyaXRlckR1b3NwYWNlLVJlZ3VsYXIub3RmJykgZm9ybWF0KCd0cnVldHlwZScpO1xuICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xufVxuQGZvbnQtZmFjZSB7XG4gICAgZm9udC1mYW1pbHk6ICdpQVdyaXRlckR1b3NwYWNlJztcbiAgICBzcmM6IHVybCgnYXNzZXRzL2lBV3JpdGVyRHVvc3BhY2UtSXRhbGljLm90ZicpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcbiAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiB9XG5AZm9udC1mYWNlIHtcbiAgICBmb250LWZhbWlseTogJ2lBV3JpdGVyRHVvc3BhY2UnO1xuICAgIHNyYzogdXJsKCdhc3NldHMvaUFXcml0ZXJEdW9zcGFjZS1Cb2xkLm90ZicpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG59XG5AZm9udC1mYWNlIHtcbiAgICBmb250LWZhbWlseTogJ2lBV3JpdGVyRHVvc3BhY2UnO1xuICAgIHNyYzogdXJsKCdhc3NldHMvaUFXcml0ZXJEdW9zcGFjZS1Cb2xkSXRhbGljLm90ZicpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG59XG5cbkBsb3N0IGd1dHRlciA2MHB4O1xuXG5oMSB7XG4gICAgZm9udC1mYW1pbHk6IFwiaUFXcml0ZXJEdW9zcGFjZVwiO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGNvbG9yOiAyMjIyMjI7XG59XG5cbnAge1xuICAgIGZvbnQtZmFtaWx5OiBcImlBV3JpdGVyRHVvc3BhY2VcIjtcbiAgICBjb2xvcjogMjIyMjIyO1xufVxuXG5kaXYge1xuICBsb3N0LWNvbHVtbjogMS8zO1xufVxuIl19 */
+.project-tile:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.project-tile:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project-tile:nth-child(3n + 1) {
+    clear: both;
+}
+
+.project-tile:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.project-photo {
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.project-title {
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.project-text {
+    font-size: 0.75em;
+}
+
+.people-tile {
+    width: calc(99.9% * 1/4 - (20px - 20px * 1/4));
+}
+
+.people-tile:nth-child(1n) {
+    float: left;
+    margin-right: 20px;
+    clear: none;
+}
+
+.people-tile:last-child {
+    margin-right: 0;
+}
+
+.people-tile:nth-child(4n) {
+    margin-right: 0;
+    float: right;
+}
+
+.people-tile:nth-child(4n + 1) {
+    clear: both;
+}
+
+.people-section {
+    display: block;
+}
+
+.people-photo {
+    max-width: 200px;
+    max-height: 200px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.people-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.people-text {
+    font-size: 0.75em;
+}
+
+.people-section {
+    display: block;
+}
