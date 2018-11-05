@@ -10,20 +10,20 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: 'src/style-pre.css',
-        dest: 'src/style.css'
+        src: 'style-pre.css',
+        dest: 'style.css'
       }
     },
 
     autoprefixer: {
       single_file: {
-        src: 'src/style.css',
-        dest: 'src/style.css'
+        src: 'style.css',
+        dest: 'style.css'
       }
     },
 
     watch: {
-      files: ['src/style-pre.css'],
+      files: ['style-pre.css'],
       tasks: ['postcss', 'autoprefixer']
     }
 
