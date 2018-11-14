@@ -141,3 +141,13 @@ a:hover {
 .people-section {
     display: block;
 }
+
+@media screen and (max-width: 400px) {
+    .project-tile {
+        lost-waffle: 1;
+    }
+
+    .people-tile {
+        lost-waffle: 1/2;
+    }
+}
