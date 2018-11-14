@@ -49,7 +49,23 @@ a:hover {
     /* lost-align: left; */
     height: 90%;
     width: 80%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5% 10% 5% 10%;
+}
+
+.main-container-section:before {
+    /* lost-align: left; */
+    content: '';
+    display: table;
+}
+
+.main-container-section:after {
+    /* lost-align: left; */
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .main-container-section:before {
@@ -219,4 +235,61 @@ a:hover {
 
 .people-section {
     display: block;
+}
+
+@media screen and (max-width: 400px) {
+    .project-tile {
+        width: calc(99.9% * 1 - (30px - 30px * 1));
+        max-width: calc(99.9% * 1 - (30px - 30px * 1));
+        height: calc(99.9% * 1 - (30px - 30px * 1));
+    }
+    .project-tile:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        clear: none;
+    }
+    .project-tile:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .project-tile:nth-child(NaNn) {
+        margin-right: 0;
+    }
+    .project-tile:nth-child(NaNn + 1) {
+        clear: both;
+    }
+    .project-tile:nth-last-child(-n + NaN) {
+        margin-bottom: 0;
+    }
+
+    .people-tile {
+        width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+        max-width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+        height: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+    }
+
+    .people-tile:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        clear: none;
+    }
+
+    .people-tile:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .people-tile:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .people-tile:nth-child(2n + 1) {
+        clear: both;
+    }
+
+    .people-tile:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
 }
