@@ -116,7 +116,6 @@ a:hover {
 .project-photo {
     height: 100%;
     width: 100%;
-    opacity: 0.9;
 }
 
 .project-title {
@@ -141,7 +140,6 @@ a:hover {
     max-height: 200px;
     height: 100%;
     width: 100%;
-    opacity: 0.9;
 }
 
 .people-title {
