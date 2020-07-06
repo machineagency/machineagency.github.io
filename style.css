@@ -254,6 +254,25 @@ a:hover {
     display: block;
 }
 
+.field-agent-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fa-name {
+    display: inline;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.fa-affiliation {
+    display: inline;
+    color: #aaaaaa;
+    font-size: 0.75em;
+
+}
+
 @media screen and (max-width: 400px) {
     .project-tile {
         width: calc(99.9% * 1 - (30px - 30px * 1));
