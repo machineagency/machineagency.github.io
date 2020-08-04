@@ -273,6 +273,17 @@ a:hover {
 
 }
 
+.paragraph-header {
+    font-weight: 600;
+    padding-bottom: 1.75%;
+}
+
+.paragraph-text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 1.75%;
+}
+
 @media screen and (max-width: 400px) {
     .project-tile {
         width: calc(99.9% * 1 - (30px - 30px * 1));
