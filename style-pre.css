@@ -54,6 +54,16 @@ a:hover {
     text-decoration: underline;
 }
 
+::-moz-selection {
+    color: #111111;
+    background: #eeeeee;
+}
+
+::selection {
+    color: #111111;
+    background: #eeeeee;
+}
+
 .padding-bottom-std {
     padding-bottom: 3.5%;
 }
