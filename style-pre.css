@@ -100,6 +100,11 @@ a:hover {
     font-size: 1em;
 }
 
+.page-notice {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
 .headline {
     font-weight: bold;
     font-size: 1.5em;
