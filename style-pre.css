@@ -152,6 +152,7 @@ a:hover {
 
 .people-section {
     display: block;
+    float: left;
 }
 
 .people-photo {
@@ -168,10 +169,6 @@ a:hover {
 
 .people-text {
     font-size: 0.75em;
-}
-
-.people-section {
-    display: block;
 }
 
 .field-agent-list {
