@@ -1,18 +1,19 @@
-name: scp files
-on: [push]
-jobs:
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: copy file via ssh password
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        source: "*"
-        target: "public_html"
+on:
+  push:
+    branches:
+        - master
+name: SCP Web Files to UW Server
+build:
+  name: Build
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@master
+  - name: copy file via ssh password
+    uses: appleboy/scp-action@master
+    with:
+      host: ${{ secrets.HOST }}
+      username: ${{ secrets.USERNAME }}
+      password: ${{ secrets.PASSWORD }}
+      port: ${{ secrets.PORT }}
+      source: "*"
+      target: "public_html"
