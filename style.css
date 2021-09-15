@@ -62,8 +62,10 @@ a:hover {
     background: #eeeeee;
 }
 
-.project-text a {
+.project-links a {
     font-weight: bold;
+    margin-right: 5px;
+    font-size: 0.75em;
 }
 
 .padding-bottom-std {
@@ -218,7 +220,7 @@ a:hover {
 }
 
 .project-title {
-    font-size: 0.85em;
+    font-size: 0.95em;
     font-weight: bold;
 }
 
