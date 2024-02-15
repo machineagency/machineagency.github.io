@@ -1,6 +1,40 @@
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-Variable.ttf") format("truetype");
+  src: url("/assets/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
 }
 
 html {
@@ -10,30 +44,35 @@ html {
 body {
   color: #eeeeee;
   background-color: #111111;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
 }
 
-.container-padded {
-  display: flex;
-  justify-content: center;
-  padding: 2em 1em;
+a {
+  color: inherit;
 }
 
-.container-no-padding {
-  display: flex;
-  justify-content: center;
+.no-margin-section {
+  width: 100%;
+  max-width: calc(600px - 2em);
+  align-self: center;
+}
+
+.margin-section {
+  margin: 0 1em;
 }
 
 .teaser {
-  max-width: 600px;
   width: 100%;
+  margin-bottom: 0.5em;
 }
 
-.main-column {
-  max-width: 600px;
-  width: 100%;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 .project-title {
@@ -42,9 +81,8 @@ body {
   margin: 0;
 }
 
-.section-title {
-  margin-bottom: 0;
-  color: #cccccc;
+.venue {
+  text-wrap: nowrap;
 }
 
 .author-names {
@@ -53,29 +91,33 @@ body {
   font-size: 0.9em;
 }
 
-.abstract {
-  /* width: 90%; */
-  font-size: 0.9em;
-  text-align: justify;
-  align-self: center;
-}
-
-.abstract p {
-  font-weight: 300;
-  color: #aaaaaa;
-}
-
-.bibtex {
-  overflow-x: scroll;
-}
-
 .links-container {
   display: flex;
+  gap: 0.5em;
+  font-style: italic;
+  font-size: 0.75em;
   flex-wrap: wrap;
+}
+
+.section-title {
+  margin-bottom: 0.5em;
+  color: #cccccc;
+  font-size: 1em;
+}
+
+.abstract {
+  font-weight: 300;
+  color: #aaaaaa;
+  font-size: 0.75em;
+  text-align: justify;
 }
 
 .video-iframe {
   width: 100%;
   aspect-ratio: 16/9;
-  margin: 1em 0;
+}
+
+.bibtex {
+  white-space: pre-wrap;
+  font-size: 0.75em;
 }
