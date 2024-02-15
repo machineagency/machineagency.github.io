@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #eeeeee;
+  background-color: #111111;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+a {
+  color: inherit;
+}
+
+.no-margin-section {
+  width: 100%;
+  max-width: calc(600px - 2em);
+  align-self: center;
+}
+
+.margin-section {
+  margin: 0 1em;
+}
+
+.teaser {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0;
+}
+
+.venue {
+  text-wrap: nowrap;
+}
+
+.author-names {
+  color: #aaaaaa;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.links-container {
+  display: flex;
+  gap: 0.5em;
+  font-style: italic;
+  font-size: 0.75em;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  margin-bottom: 0.5em;
+  color: #cccccc;
+  font-size: 1em;
+}
+
+.abstract {
+  font-weight: 300;
+  color: #aaaaaa;
+  font-size: 0.75em;
+  text-align: justify;
+}
+
+.video-iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.bibtex {
+  white-space: pre-wrap;
+  font-size: 0.75em;
+}
