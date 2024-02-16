@@ -55,6 +55,15 @@ a {
   color: inherit;
 }
 
+.home {
+  position: absolute;
+  right: 0;
+  padding: 0.2em 0.4em;
+  color: #cccccc;
+  font-style: italic;
+  background-color: #111111;
+}
+
 .no-margin-section {
   width: 100%;
   max-width: calc(var(--col-width) - 2em);
