@@ -1,38 +1,38 @@
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-Italic.ttf") format("truetype");
+  src: url("../assets/fonts/Inter-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-BoldItalic.ttf") format("truetype");
+  src: url("../assets/fonts/Inter-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-Light.ttf") format("truetype");
+  src: url("../assets/fonts/Inter-Light.ttf") format("truetype");
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter-LightItalic.ttf") format("truetype");
+  src: url("../assets/fonts/Inter-LightItalic.ttf") format("truetype");
   font-weight: lighter;
   font-style: italic;
 }
@@ -42,12 +42,13 @@ html {
 }
 
 body {
+  --col-width: 800px;
   color: #eeeeee;
   background-color: #111111;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: var(--col-width);
 }
 
 a {
@@ -56,7 +57,7 @@ a {
 
 .no-margin-section {
   width: 100%;
-  max-width: calc(600px - 2em);
+  max-width: calc(var(--col-width) - 2em);
   align-self: center;
 }
 
@@ -66,58 +67,62 @@ a {
 
 .teaser {
   width: 100%;
-  margin-bottom: 0.5em;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  gap: 1em;
+  flex-direction: column;
+  margin: 1em 0;
 }
 
 .project-title {
   font-weight: bold;
   font-size: 2em;
-  margin: 0;
 }
 
-.venue {
-  text-wrap: nowrap;
+.project-subtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #cccccc;
+  margin-top: 0.3em;
 }
 
 .author-names {
-  color: #aaaaaa;
-  font-weight: 300;
   font-size: 0.9em;
+  margin-top: 1em;
 }
 
-.links-container {
+.links {
   display: flex;
   gap: 0.5em;
+  margin-top: 1em;
   font-style: italic;
   font-size: 0.75em;
   flex-wrap: wrap;
+  color: #cccccc;
 }
 
 .section-title {
-  margin-bottom: 0.5em;
+  margin: 2em 0 0.5em 0;
   color: #cccccc;
   font-size: 1em;
 }
 
 .abstract {
   font-weight: 300;
-  color: #aaaaaa;
-  font-size: 0.75em;
+  color: #bbbbbb;
   text-align: justify;
+  line-height: 1.2;
 }
 
 .video-iframe {
   width: 100%;
   aspect-ratio: 16/9;
+  margin: 2em 0;
 }
 
 .bibtex {
   white-space: pre-wrap;
-  font-size: 0.75em;
+  font-size: 0.9em;
+  color: #bbbbbb;
 }
