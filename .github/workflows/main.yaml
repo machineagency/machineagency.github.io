@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-        - master
+        - main
 name: SCP Web Files to UW Server
 jobs:
   build:
