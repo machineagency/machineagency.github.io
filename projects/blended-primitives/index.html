@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's in a cable?</title>
+    <link rel="stylesheet" href="../projects.css" />
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <a class="home" href="../../">back to home</a>
+    <section class="margin-section">
+      <div style="height: 3em"></div>
+      <div class="header">
+        <span class="project-title">What’s in a cable?</span>
+        <span class="project-subtitle">
+          Abstracting Knitting Design Elements with Blended Raster/Vector
+          Primitives
+        </span>
+        <span class="author-names">
+          Hannah Twigg-Smith, Yuecheng Peng, Emily Whiting, and Nadya Peek
+        </span>
+        <!-- <div class="links">
+          <a
+            href="https://knitscape.net/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Live Site
+          </a>
+          <a
+            href="https://github.com/machineagency/knitscape"
+            target="_blank"
+            rel="noopener noreferrer">
+            Source Code Repository
+          </a>
+        </div> -->
+      </div>
+    </section>
+    <section class="no-margin-section">
+      <img class="teaser" src="teaser.png" />
+    </section>
+    <section class="margin-section">
+      <div class="teaser-caption">
+        In our design environment for editing knitting charts with blended
+        primitives, a chart of knitting instructions is rasterized from layered
+        vector boundaries and paths with associated raster stitch and yarn
+        blocks. These cabled twist and braid patterns are designed using stitch
+        paths we defined to encode a “right-leaning twist” (A) and a
+        “left-leaning twist” (B). By placing the right twist along a stitch path
+        that defines a purl border (C), we can produce a twist texture (D). By
+        staggering both the left and right twists (E), we can produce a braid
+        texture (F)
+      </div>
+
+      <h3 class="section-title">Abstract</h3>
+      <p class="abstract">
+        In chart-based programming environments for machine knitting, patterns
+        are specified at a low level by placing operations on a grid. This
+        highly manual workflow makes it challenging to iterate on design
+        elements such as cables, colorwork, and texture. While vector-based
+        abstractions for knitting design elements may facili- tate higher-level
+        manipulation, they often include interdependen- cies which require
+        stitch-level reconciliation. To address this, we contribute a new way of
+        specifying knits with blended vector and raster primitives. Our
+        abstraction supports the design of interdepen- dent elements like
+        colorwork and texture. We have implemented our blended raster/vector
+        specification in a direct manipulation design tool where primitives are
+        layered and rasterized, allowing for simulation of the resulting knit
+        structure and generation of ma- chine instructions. Through examples, we
+        show how our approach enables higher-level manipulation of various
+        knitting techniques, including intarsia colorwork, short rows, and
+        cables. Specifically, we show how our tool supports the design of
+        complex patterns including origami pleat patterns and capacitive sensor
+        patches.
+      </p>
+    </section>
+  </body>
+</html>

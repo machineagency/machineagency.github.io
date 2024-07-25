@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KnitScape</title>
     <link rel="stylesheet" href="../projects.css" />
-    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon">
-
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <a class="home" href="../../">back to home</a>
@@ -18,12 +17,26 @@
       <div class="header">
         <span class="project-title">KnitScape</span>
         <span class="project-subtitle">
-          Computational Design and Yarn-level Simulation of Slip and Tuck Colorwork Knitting Patterns
+          Computational Design and Yarn-level Simulation of Slip and Tuck
+          Colorwork Knitting Patterns
         </span>
         <span class="author-names">
           Hannah Twigg-Smith, Emily Whiting, and Nadya Peek
         </span>
         <div class="links">
+          <span>Published at CHI 2024.</span>
+          <a
+            href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642799"
+            target="_blank"
+            rel="noopener noreferrer">
+            Paper PDF
+          </a>
+          <a
+            href="https://dl.acm.org/doi/10.1145/3613904.3642799"
+            target="_blank"
+            rel="noopener noreferrer">
+            ACM DL
+          </a>
           <a
             href="https://knitscape.net/"
             target="_blank"
@@ -34,23 +47,48 @@
             href="https://github.com/machineagency/knitscape"
             target="_blank"
             rel="noopener noreferrer">
-            Source Code
+            Source Code Repository
           </a>
         </div>
       </div>
 
       <h3 class="section-title">Abstract</h3>
       <p class="abstract">
-        Slipped and tucked stitches introduce small areas of deformation that compound and result in emergent textures on knitted fabrics.
-        When used together with color changes and ladders, these can also produce dramatic colorwork and openwork effects.
-        However, designing slip and tuck colorwork patterns is challenging due to the complex interactions between operations, yarns, and deformations.
-        We present KnitScape, a browser-based tool for design and simulation of stitch patterns for knitting.
-        KnitScape provides a design interface to specify 1) operation repeats, 2) color changes, and 3) needle positions.
-        These inputs are used to build a graph of yarn topology and run a yarn-level spring simulation.
-        This enables visualization of the deformation that arises from slip and tuck operations.
-        Through its design tool and simulation, KnitScape enables rapid exploration of a complex colorwork design space.
+        Slipped and tucked stitches introduce small areas of deformation that
+        compound and result in emergent textures on knitted fabrics. When used
+        together with color changes and ladders, these can also produce dramatic
+        colorwork and openwork effects. However, designing slip and tuck
+        colorwork patterns is challenging due to the complex interactions
+        between operations, yarns, and deformations. We present KnitScape, a
+        browser-based tool for design and simulation of stitch patterns for
+        knitting. KnitScape provides a design interface to specify 1) operation
+        repeats, 2) color changes, and 3) needle positions. These inputs are
+        used to build a graph of yarn topology and run a yarn-level spring
+        simulation. This enables visualization of the deformation that arises
+        from slip and tuck operations. Through its design tool and simulation,
+        KnitScape enables rapid exploration of a complex colorwork design space.
         We demonstrate KnitScape with a series of example swatches.
       </p>
+    </section>
+    <iframe
+      class="no-margin-section video-iframe"
+      src="https://www.youtube.com/embed/rtc72bLLm6w?si=xRrUramMAM_wudpO"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+    <section class="margin-section">
+      <h3 class="section-title">Bibtex</h3>
+      <pre class="bibtex">
+@inproceedings{twigg2024knitscape,
+  title={KnitScape: Computational Design and Yarn-Level Simulation of Slip and Tuck Colorwork Knitting Patterns},
+  author={Twigg-Smith, Hannah and Whiting, Emily and Peek, Nadya},
+  booktitle={Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems},
+  pages={1--20},
+  year={2024}
+}
+</pre
+      >
     </section>
   </body>
 </html>

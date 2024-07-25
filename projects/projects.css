@@ -78,6 +78,14 @@ a {
   width: 100%;
 }
 
+.teaser-caption {
+  font-size: small;
+  line-height: 1;
+  margin-top: 0.5rem;
+  color: #cccccc;
+  font-style: italic;
+}
+
 .header {
   display: flex;
   flex-direction: column;
