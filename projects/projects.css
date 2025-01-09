@@ -74,6 +74,10 @@ a {
   margin: 0 1em;
 }
 
+summary > h2 {
+  display: inline-block;
+}
+
 .teaser {
   width: 100%;
 }
