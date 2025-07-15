@@ -16,13 +16,17 @@
     <img class="teaser" src="teaser.jpg" />
   </section>
   <section class="margin-section">
+    <br>
+    This project started with an extended abstract presented at CHI 2024, and culminated in a full
+    paper published at CHI 2025. Please find references to both projects below.
     <div class="header">
-      <span class="project-title">Playing the Print</span>
-      <span class="project-subtitle">MIDI-Based Fabrication Interfaces to Explore and Document Material Behavior</span>
-      <span class="author-names">Blair Subbaraman and Nadya Peek</span>
+      <span class="project-title">It's Not the Shape, It's the Settings</span>
+      <span class="project-subtitle">Tools for Exploring, Documenting, and Sharing Physical Fabrication Parameters in 3D
+        Printing</span>
+      <span class="author-names">Blair Subbaraman, Nathaneal Bursch and Nadya Peek</span>
       <div class="links">
-        <span>Published at CHI EA 2024</span>
-        <a href="https://doi.org/10.1145/3613905.3650966" target="_blank" rel="noopener noreferrer">
+        <span>Published at CHI 2025</span>
+        <a href="https://dl.acm.org/doi/full/10.1145/3706598.3713354" target="_blank" rel="noopener noreferrer">
           Paper PDF
         </a>
       </div>
@@ -30,20 +34,61 @@
 
     <h3 class="section-title">Abstract</h3>
     <p class="abstract">
-      Digital fabrication software supports common activities like designing models and setting parameters. However, the
-      increasing diversity of fabrication materials and contexts means that determining the right settings is a constant
-      challenge. Manipulating machine parameters and observing material results is necessary for successful outcomes. In
-      this work, we present tools to iteratively develop computer-controlled fabrication workflows. These tools generate
-      toolpaths using Javascript code, continuously manipulate parameters during machine execution, and document the
-      resulting material behavior. First, we present software to interactively tune 3D prints. We use a MIDI controller
-      to modulate fabrication parameters during execution. We demonstrate our approach through a set of 3D prints
-      created with our software. Second, we introduce software which synchronizes video of a fabrication process with
-      the machine instructions being executed. Doing so archives the effect of manipulating machine parameters. We argue
-      that infrastructure which encourages exploration and documentation of both code and materials are crucial to
-      support broader uptake of fabrication technologies in creative contexts.
+      The material properties of 3D prints depend on their constituent materials, how they were printed, and local
+      geometrical features. Motivated by challenges in sharing physical details of 3D printing workflows including
+      machine state and print settings, we contribute tools to support the exploration of the vast design space these
+      interdependent parameters make up. Inspired by live music performance and video captioning, we contribute an
+      interactive controller for parameters not represented in geometry such as speed and extrusion rate, and a system
+      for automatically syncing video documentation to machine settings, G-Code, and print commands. By synchronizing
+      video with machine instructions and interactive adjustments, we archive the relationship between digital settings
+      and physical output for revisiting and sharing. We demonstrate example workflows in multiple materials. Our
+      approach suggests how maker tools that promote settings exploration and sharing can support the integration of
+      fabrication technologies in new contexts, with new materials.
     </p>
     <h3 class="section-title">Bibtex</h3>
     <pre class="bibtex">
+      @inproceedings{10.1145/3706598.3713354,
+        author = {Subbaraman, Blair and Bursch, Nathaneal and Peek, Nadya},
+        title = {It's Not the Shape, It's the Settings: Tools for Exploring, Documenting, and Sharing Physical Fabrication Parameters in 3D Printing},
+        year = {2025},
+        isbn = {9798400713941},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3706598.3713354},
+        doi = {10.1145/3706598.3713354},
+        abstract = {The material properties of 3D prints depend on their constituent materials, how they were printed, and local geometrical features. Motivated by challenges in sharing physical details of 3D printing workflows including machine state and print settings, we contribute tools to support the exploration of the vast design space these interdependent parameters make up. Inspired by live music performance and video captioning, we contribute an interactive controller for parameters not represented in geometry such as speed and extrusion rate, and a system for automatically syncing video documentation to machine settings, G-Code, and print commands. By synchronizing video with machine instructions and interactive adjustments, we archive the relationship between digital settings and physical output for revisiting and sharing. We demonstrate example workflows in multiple materials. Our approach suggests how maker tools that promote settings exploration and sharing can support the integration of fabrication technologies in new contexts, with new materials.},
+        booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},
+        articleno = {449},
+        numpages = {19},
+        keywords = {3D Printing, Digital Fabrication, Material Exploration, p5.js, Creativity, Creative Code},
+        location = {
+        },
+        series = {CHI '25}
+        }
+</pre>
+  </section>
+
+  <div class="header">
+    <span class="project-title">Playing the Print</span>
+    <span class="project-subtitle">MIDI-Based Fabrication Interfaces to Explore and Document Material Behavior</span>
+    <span class="author-names">Blair Subbaraman and Nadya Peek</span>
+    <div class="links">
+      <span>Published at CHI EA 2024</span>
+      <a href="https://doi.org/10.1145/3613905.3650966" target="_blank" rel="noopener noreferrer">
+        Paper PDF
+      </a>
+    </div>
+  </div>
+
+  <h3 class="section-title">Abstract</h3>
+  <p class="abstract">
+    Digital fabrication software supports common activities like designing models and setting parameters
+    However, the increasing diversity of fabrication materials and contexts means that determining the right settings is a constant challenge.
+    Manipulating machine parameters and observing material results is necessary for successful outcomes. In this work, we present tools to iteratively develop computer-controlled fabrication workflows. These tools generate toolpaths using Javascript code, continuously manipulate parameters during machine execution, and document the resulting material behavior. First, we present software to interactively tune 3D prints. We use a MIDI controller to modulate fabrication parameters during execution. We demonstrate our approach through a set of 3D prints created with our software. Second, we introduce software which synchronizes video of a fabrication process with the machine instructions being executed. Doing so archives the effect of manipulating machine parameters. We argue that
+    infrastructure which encourages exploration and documentation of both code and materials are crucial to support broader uptake of fabrication technologies in creative contexts.
+  </p>
+  <h3 class="section-title">Bibtex</h3>
+  <pre class="bibtex">
         @inproceedings{10.1145/3613905.3650966,
           author = {Subbaraman, Blair and Peek, Nadya},
           title = {Playing the Print: MIDI-Based Fabrication Interfaces to Explore and Document Material Behavior},
