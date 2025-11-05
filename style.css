@@ -295,6 +295,17 @@ a:hover {
     padding-bottom: 1.75%;
 }
 
+.category-header {
+    font-weight: 600;
+    padding-bottom: 1%;
+}
+
+.paper-list {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 1%;
+}
+
 .paragraph-text {
     font-size: 14px;
     line-height: 1.5;
